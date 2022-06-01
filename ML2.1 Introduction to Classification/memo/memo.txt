@@ -1,0 +1,40 @@
+1) What are the necessary preprocessing steps regarding:
+
+a) classes ?
+We check if there are balanced classes. Then we can see correlations between classes and features. Finally, we have to separate them from the features. 
+
+b) categorical features ? 
+Fisrt we identify these in order to separate them from the continuous features, then we extract multicategorical features (i.e., features with more than 2 categories) and we use a dummy encoder on these. 
+
+c) continuous features ?
+We have to separate them from the categorical features, then we standardize them after spliting our data. We have to standardise only the train and test features.    
+
+
+
+2) Confusion matrix:
+
+a)How many patient were incorrectly diagnosed with a Heart disease (false positives) ?
+5
+
+b)How many patient were incorrectly diagnosed as being Healthy (false negatives)?
+11
+
+
+
+3) Changing the threshold:
+
+a)What is the precision if we change the threshold to have a 0.95 recall ? 
+0.47
+
+b) How many patient were incorrectly diagnosed as being Healthy (false negatives)?
+2
+
+
+
+4) Choosing an overall metric:
+
+a) If I can compute my test sample probabilities and care more about the positive class, which overall metric should I use to compare classifiers ? 
+average precision score
+
+b) And if I only have the class predictions and no probabilities ?
+F1
